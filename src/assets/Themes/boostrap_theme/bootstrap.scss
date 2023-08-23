@@ -1,0 +1,21 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+body[theme="bootstrap-dark"] {
+  --clr-green-light: #{$dark};
+  --moon: #{$light};
+  --section1background: #{$blue-900};
+  --section2background: #{$dark};
+  --section3icons: #{$light};
+  --textcolor: #{$light};
+  --btnbackground: #{$light};
+  --btntextcolor: #{$dark};
+}
+body[theme="bootstrap-light"] {
+  --clr-green-light: #{$indigo-600};
+  --moon: #{$dark};
+  --section1background: #{$indigo-100};
+  --section2background: #{$light};
+  --section3icons: #{$indigo-600};
+  --textcolor: #{$dark};
+  --btnbackground: #{$indigo-600};
+  --btntextcolor: #{$light};
+}

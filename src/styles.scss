@@ -1,0 +1,14 @@
+@import "./assets/Themes/variables.scss";
+@import "./assets/Themes/custom_theme/custom.scss";
+
+@import "./assets/Themes/boostrap_theme/bootstrap.scss";
+@import "./assets/Themes/material_theme/material.scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

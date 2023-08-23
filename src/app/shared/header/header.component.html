@@ -1,0 +1,56 @@
+<nav>
+  <div class="list-wrapper">
+    <div class="link-wrapper">
+      <div class="nav-header">
+        <i class="fab fa-old-republic"></i>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div><a href="">Home</a></div>
+      <div><a href="">Profile</a></div>
+      <div><a href="">Posts</a></div>
+    </div>
+    <div class="link-wrapper">
+      <div class="theme-options">
+        <a (click)="showThemeOptions = !showThemeOptions"
+          ><i class="fas fa-palette"></i
+        ></a>
+        <ul *ngIf="showThemeOptions">
+          <li>
+            <span>Custom</span>
+            <ul class="themeMode">
+              <li (click)="themeChange('custom-light')">Light</li>
+              <li (click)="themeChange('custom-dark')">Dark</li>
+            </ul>
+          </li>
+          <li>
+            <span>Bootstrap</span>
+            <ul class="themeMode">
+              <li (click)="themeChange('bootstrap-light')">Light</li>
+              <li (click)="themeChange('bootstrap-dark')">Dark</li>
+            </ul>
+          </li>
+          <li>
+            <span>Material</span>
+            <ul class="themeMode">
+              <li (click)="themeChange('material-light')">Light</li>
+              <li (click)="themeChange('material-dark')">Dark</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href=""
+          ><i class="fas fa-envelope" style="display: inline"></i
+          >&nbsp;Contact</a
+        >
+      </div>
+      <div>
+        <a href=""
+          ><i class="fas fa-cog" style="display: inline"></i>&nbsp;Settings</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
